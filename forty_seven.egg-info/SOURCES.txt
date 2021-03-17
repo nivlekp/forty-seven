@@ -1,0 +1,8 @@
+README.md
+setup.py
+forty_seven.egg-info/PKG-INFO
+forty_seven.egg-info/SOURCES.txt
+forty_seven.egg-info/dependency_links.txt
+forty_seven.egg-info/not-zip-safe
+forty_seven.egg-info/requires.txt
+forty_seven.egg-info/top_level.txt
