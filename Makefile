@@ -69,7 +69,7 @@ mypy:
 	# fix mypy errors and then run mypy over tests/ directory
 	# mypy tests
 
-project = utsu
+project = forty_seven
 
 pytest:
 	pytest .
@@ -109,11 +109,3 @@ test:
 	make isort-check
 	#make mypy
 	make pytest
-
-segments:
-	cd utsu; \
-	python tools/SegmentIllustrator.py a b c; \
-	python tools/SegmentRenderer.py a b c; \
-	cd builds/score; \
-	lilypond score.ly; \
-	open score.pdf
