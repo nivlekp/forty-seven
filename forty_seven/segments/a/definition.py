@@ -18,24 +18,30 @@ pitch_set_1 = pang.gen_pitches_from_sieve(
 
 sequence = pang.Sequence()
 sound_points_generator = pang.GRWSoundPointsGenerator(pitch_set=pitch_set_0, seed=28374)
-sequence.extend(pang.Sequence(
-    sound_points_generator=sound_points_generator, sequence_duration=10
-))
+sequence.extend(
+    pang.Sequence(sound_points_generator=sound_points_generator, sequence_duration=10)
+)
 
-sound_points_generator = pang.AtaxicSoundPointsGenerator(pitch_set=pitch_set_1, seed=98719)
-sequence.extend(pang.Sequence(
-    sound_points_generator=sound_points_generator, sequence_duration=5
-))
+sound_points_generator = pang.AtaxicSoundPointsGenerator(
+    pitch_set=pitch_set_1, seed=98719
+)
+sequence.extend(
+    pang.Sequence(sound_points_generator=sound_points_generator, sequence_duration=5)
+)
 
-sound_points_generator = pang.GRWSoundPointsGenerator(pitch_set=pitch_set_0, seed=234234)
-sequence.extend(pang.Sequence(
-    sound_points_generator=sound_points_generator, sequence_duration=10
-))
+sound_points_generator = pang.GRWSoundPointsGenerator(
+    pitch_set=pitch_set_0, seed=234234
+)
+sequence.extend(
+    pang.Sequence(sound_points_generator=sound_points_generator, sequence_duration=10)
+)
 
-sound_points_generator = pang.AtaxicSoundPointsGenerator(pitch_set=pitch_set_1, seed=91616)
-sequence.extend(pang.Sequence(
-    sound_points_generator=sound_points_generator, sequence_duration=5
-))
+sound_points_generator = pang.AtaxicSoundPointsGenerator(
+    pitch_set=pitch_set_1, seed=91616
+)
+sequence.extend(
+    pang.Sequence(sound_points_generator=sound_points_generator, sequence_duration=5)
+)
 
 command = pang.QuantizeSequenceCommand(sequence)
 scope = pang.Scope(voice_name="FluteVoice1")
