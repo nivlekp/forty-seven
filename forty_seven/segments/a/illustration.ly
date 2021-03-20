@@ -3,6 +3,8 @@
 
 #(ly:set-option 'relative-includes #t)
 
+\include "../../stylesheets/stylesheet.ily"
+
 \context Score = "forty-seven"
 <<
     \context Staff = "FluteStaff"
