@@ -1,8 +1,9 @@
-from ._lib import make_score_template, metronome_marks, registrations, sieves
+from ._lib import make_score_template, metronome_marks, q_schemas, registrations, sieves
 
 __all__ = [
     "make_score_template",
     "metronome_marks",
+    "q_schemas",
     "registrations",
     "sieves",
 ]

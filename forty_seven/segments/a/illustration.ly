@@ -13,220 +13,452 @@
         {
             {
                 \tempo 4=60
-                \time 4/4
-                r32.
-                af''64
-                r8.
-                \times 4/5 {
-                    r16
-                    af''8
-                    ~
-                    af''8
-                    ~
-                }
-                \times 4/5 {
-                    af''8.
-                    \grace {
-                        a''16
-                    }
-                    af''8
-                    ~
-                }
-                af''4
-                ~
-            }
-            {
-                af''8.
-                e''16
-                ~
-                e''4
-                ~
-                \times 2/3 {
-                    e''4
-                    ~
-                    e''16
-                    af''16
-                    ~
-                }
-                af''4
-                ~
-            }
-            {
-                af''2
-                ~
-                \times 4/5 {
-                    af''16.
-                    af''16
-                    ~
-                }
-                af''16.
-                af''32
-                ~
-                \times 4/5 {
-                    af''32
-                    e''32
-                    ~
-                    e''8
-                    ~
-                    e''8
-                    ~
-                }
-            }
-            {
-                e''64
-                af''8...
-                ~
+                \time 7/8
+                r16
+                af''16
+                r8
                 af''8
                 ~
-                \times 4/5 {
-                    af''16
-                    d'''32
-                    r16
-                }
-                r4
-                \times 4/7 {
-                    r8
-                    r32
-                    bf'32
-                    ~
-                    bf'4
-                    ~
-                }
-            }
-            {
-                bf'4
-                ~
-                bf'16
-                ~
-                bf'64
-                f'64
-                d'''32
-                ~
-                d'''8
-                ~
-                \times 4/5 {
-                    d'''8
-                    \times 2/3 {
-                        d'''16
-                        af''32
-                        ~
-                    }
-                    af''16
-                    e''16
-                    ~
-                }
-                e''4
-                ~
-            }
-            {
-                \times 2/3 {
-                    e''8
-                    e''4
-                    ~
-                }
-                e''64
-                ef''8...
-                ~
-                ef''64
-                r64
-                r64
-                af''64
-                ~
                 af''16
+                cs'''8.
                 ~
-                af''64
-                a''32.
+                cs'''8
+                a''8
                 ~
-                \times 2/3 {
-                    a''16.
-                }
-                \times 4/5 {
-                    r8.
-                    \times 2/3 {
-                        r16
-                        cs'''32
-                        ~
-                    }
-                    cs'''16
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12 {
+                    a''1
+                    af''2
                     ~
                 }
             }
             {
-                \times 8/13 {
-                    cs'''16
-                    af''32
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/13 {
+                    af''4.
                     ~
                     af''8
-                    r8.
-                }
-                \times 2/3 {
-                    r8
-                    \times 4/5 {
-                        af''16.
-                        ~
-                        af''32
-                        r32
+                    e''8
+                    ~
+                    e''4
+                    af''8
+                    \grace {
+                        cs'''16
                     }
-                    r8
-                }
-                \times 8/13 {
-                    r16.
-                    r32
-                    af''32
+                    cs'''8
+                    e''2
                     ~
-                    af''4
-                    ~
-                }
-                \times 2/3 {
-                    af''4
-                    ~
-                    af''16
-                    r16
                 }
             }
             {
-                r16
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/8 {
+                    e''2
+                    ef''4
+                    ef''4
+                    ~
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10 {
+                    ef''8
+                    ef''8
+                    ~
+                    ef''8
+                    af''8
+                    ~
+                    af''8
+                    af''8
+                    cs'''2
+                    ~
+                }
+            }
+            {
+                cs'''4
+                ~
+                cs'''16
+                a''16
+                ~
+                a''16
                 af''8.
                 ~
-                \times 4/5 {
-                    af''32
-                    e''32
-                    ~
-                    e''8
-                    ~
-                    e''8
-                    ~
+                af''4
+                ~
+            }
+            {
+                af''4.
+                ~
+                af''8
+                e''16
+                af''16
+                af''4
+                ~
+            }
+            {
+                af''16
+                af''16
+                ~
+                af''16
+                ef''8.
+                ~
+                ef''4
+                ~
+                ef''16
+                b'''8.
+                ~
+            }
+            {
+                b'''2..
+                ~
+            }
+            {
+                b'''16
+                fs'''16
+                ~
+                fs'''4
+                ~
+                fs'''4
+                \grace {
+                    ef''16
                 }
-                \times 8/13 {
-                    e''16.
-                    fs'4
-                    ~
-                    fs'16
-                    ~
+                ef''8
+                af''8
+                ~
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12 {
+                    \times 2/3 {
+                        af''4
+                        \grace {
+                            e''16
+                        }
+                        ef''2
+                        ~
+                    }
+                    \times 2/3 {
+                        ef''2
+                        a''4
+                        ~
+                    }
+                    a''2
                 }
-                fs'16..
-                r64
+            }
+            {
+                a''16
+                ef''16
+                ~
+                ef''16
+                ef''8.
+                ~
+                ef''8.
+                ef''16
+                ~
+                ef''8
                 r8
             }
             {
-                \times 8/13 {
-                    r16.
-                    r16
-                    r32
-                    c'32
-                    r32
-                    e''32
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/13 {
+                    r4.
+                    r8
+                    ef''8
                     ~
+                    ef''4
+                    ~
+                    ef''8
+                    ef''8
+                    ~
+                    ef''4
+                    ~
+                    ef''8
+                    b'''8
+                    ~
+                }
+            }
+            {
+                b'''8
+                b'''4
+                fs'''16
+                d'''16
+                ~
+                d'''16
+                cs'''16
+                ~
+                cs'''8
+                r16
+                cs'''16
+                ~
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12 {
+                    cs'''4
+                    d'''4
+                    ~
+                    d'''1
+                    ~
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/13 {
+                    d'''4.
+                    ~
+                    d'''8
+                    b'''8
+                    ~
+                    b'''2
+                    b'''4
+                    ~
+                    b'''8
+                    cs'''8
+                    ~
+                }
+            }
+            {
+                cs'''16
+                g'''16
+                g'''8
+                r8
+                r8
+                cs'''16
+                r16
+                r8
+                c''''8
+                ~
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10 {
+                    c''''8
+                    cs'''8
+                    ~
+                    cs'''4.
+                    \grace {
+                        c''''16
+                    }
+                    fs'''8
+                    ~
+                    fs'''8
+                    \grace {
+                        cs'''16
+                    }
+                    b'''8
+                    d'''8
+                    \grace {
+                        c''''16
+                    }
+                    cs'''8
+                    ~
+                }
+            }
+            {
+                cs'''8
+                cs'''16
+                b'''16
+                r8
+                r8
+                b'''16
+                c''''16
+                ~
+                c''''16
+                r16
+                \grace {
+                    b'''16
+                }
+                cs'''16
+                r16
+            }
+            {
+                r8.
+                \grace {
+                    b'''16
+                }
+                fs'''16
+                r8
+                r16
+                b'''8.
+                \grace {
+                    b'''16
+                }
+                fs'''16
+                r16
+                cs'''8
+                ~
+            }
+            {
+                cs'''16
+                b'''16
+                r8.
+                g'''16
+                r8
+                cs'''16
+                r16
+                cs'''16
+                d'''16
+                ~
+                d'''16
+                g'''16
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/13 {
+                    fs'''4
+                    fs'''8
+                    ~
+                    fs'''8
+                    d'''8
+                    \grace {
+                        g'''16
+                    }
+                    cs'''8
+                    d'''8
+                    fs'''4
+                    g'''4
+                    ~
+                    g'''8
+                    \grace {
+                        d'''16
+                    }
+                    g'''8
+                }
+            }
+            {
+                fs'''16
+                d'''16
+                ~
+                d'''16
+                g'''8.
+                ~
+                g'''8
+                \grace {
+                    g'''16
+                }
+                fs'''16
+                r16
+                r4
+            }
+            {
+                r16
+                ef''16
+                ~
+                ef''8.
+                ef''16
+                ~
+                ef''16
+                af''8.
+                ~
+                af''4
+                ~
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10 {
+                    af''4.
+                    e''4.
+                    ~
+                    e''4.
+                    cs'''8
+                    ~
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/13 {
+                    cs'''8
+                    af''4
+                    ~
+                    af''8
                     e''8
                     ~
+                    e''8
+                    af''8
+                    ~
+                    af''2.
+                    ~
                 }
-                e''4
+            }
+            {
+                af''8
+                cs'''8
+                ef''16
+                ef''16
                 ~
-                \times 2/3 {
-                    e''4
-                    r8
+                ef''8
+                af''8
+                ~
+                af''8.
+                r16
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/13 {
+                    r2..
+                    ef''2.
+                    ~
                 }
-                r4
+            }
+            {
+                ef''8
+                ef''4
+                ~
+                ef''8.
+                ef''16
+                ~
+                ef''8.
+                \grace {
+                    ef''16
+                }
+                e''16
+                ~
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/8 {
+                    e''4
+                    a''2.
+                    ~
+                }
+            }
+            {
+                a''2..
+                ~
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10 {
+                    a''4
+                    e''4.
+                    e''8
+                    ~
+                    e''8
+                    cs'''8
+                    ~
+                    cs'''8
+                    cs'''8
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12 {
+                    \times 2/3 {
+                        \grace {
+                            cs'''16
+                        }
+                        e''2
+                        ef''4
+                        ~
+                    }
+                    \times 2/3 {
+                        ef''4
+                        r2
+                    }
+                    r2
+                }
             }
         }
     >>

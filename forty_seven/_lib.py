@@ -1,4 +1,5 @@
 import abjad
+from abjadext import nauert
 
 instruments = abjad.OrderedDict([("Flute", abjad.Flute())])
 
@@ -32,6 +33,50 @@ registrations = abjad.OrderedDict(
             ),
         ),
         ("high", (start_pitch + abjad.NamedInterval(24), stop_pitch)),
+    ]
+)
+
+search_trees = abjad.OrderedDict(
+    [
+        (
+            "A",
+            nauert.UnweightedSearchTree(
+                definition={
+                    2: {2: None, 3: None},
+                    3: {2: None, 3: None},
+                    5: {2: None},
+                    7: None,
+                }
+            ),
+        ),
+        (
+            "B",
+            nauert.UnweightedSearchTree(
+                definition={
+                    2: {2: None, 3: None},
+                    3: {2: None, 3: None},
+                    5: {2: None},
+                    7: {2: None},
+                    13: None,
+                },
+            ),
+        ),
+    ]
+)
+
+
+q_schemas = abjad.OrderedDict(
+    [
+        ("A", nauert.MeasurewiseQSchema(search_tree=search_trees["A"])),
+        (
+            "B",
+            nauert.MeasurewiseQSchema(
+                search_tree=search_trees["B"],
+                tempo=metronome_marks["60"],
+                time_signature=(7, 8),
+                use_full_measure=True,
+            ),
+        ),
     ]
 )
 
