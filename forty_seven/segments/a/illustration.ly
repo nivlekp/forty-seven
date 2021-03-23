@@ -23,13 +23,13 @@
                 cs'''8.
                 ~
                 cs'''8
-                a''8
+                aqs''8
                 ~
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/12 {
-                    a''1
+                    aqs''1
                     af''2
                     ~
                 }
@@ -40,22 +40,22 @@
                     af''4.
                     ~
                     af''8
-                    e''8
+                    eqs''8
                     ~
-                    e''4
+                    eqs''4
                     af''8
                     \grace {
                         cs'''16
                     }
                     cs'''8
-                    e''2
+                    eqs''2
                     ~
                 }
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/8 {
-                    e''2
+                    eqs''2
                     ef''4
                     ef''4
                     ~
@@ -80,9 +80,9 @@
                 cs'''4
                 ~
                 cs'''16
-                a''16
+                aqs''16
                 ~
-                a''16
+                aqs''16
                 af''8.
                 ~
                 af''4
@@ -92,7 +92,7 @@
                 af''4.
                 ~
                 af''8
-                e''16
+                eqs''16
                 af''16
                 af''4
                 ~
@@ -107,20 +107,20 @@
                 ef''4
                 ~
                 ef''16
-                b'''8.
+                cqs''''8.
                 ~
             }
             {
-                b'''2..
+                cqs''''2..
                 ~
             }
             {
-                b'''16
-                fs'''16
+                cqs''''16
+                dqs'''16
                 ~
-                fs'''4
+                dqs'''4
                 ~
-                fs'''4
+                dqs'''4
                 \grace {
                     ef''16
                 }
@@ -134,21 +134,21 @@
                     \times 2/3 {
                         af''4
                         \grace {
-                            e''16
+                            eqs''16
                         }
                         ef''2
                         ~
                     }
                     \times 2/3 {
                         ef''2
-                        a''4
+                        aqs''4
                         ~
                     }
-                    a''2
+                    aqs''2
                 }
             }
             {
-                a''16
+                aqs''16
                 ef''16
                 ~
                 ef''16
@@ -182,163 +182,163 @@
             {
                 b'''8
                 b'''4
-                fs'''16
-                d'''16
-                ~
-                d'''16
                 cs'''16
+                aqs''16
                 ~
-                cs'''8
+                aqs''16
+                eqs''16
+                ~
+                eqs''8
                 r16
-                cs'''16
+                ef''16
                 ~
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/12 {
-                    cs'''4
-                    d'''4
+                    ef''4
+                    aqs''4
                     ~
-                    d'''1
+                    aqs''1
                     ~
                 }
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/13 {
-                    d'''4.
+                    aqs''4.
                     ~
-                    d'''8
-                    b'''8
+                    aqs''8
+                    cqs''''8
                     ~
-                    b'''2
+                    cqs''''2
                     b'''4
                     ~
                     b'''8
-                    cs'''8
+                    eqs''8
                     ~
                 }
             }
             {
-                cs'''16
-                g'''16
-                g'''8
+                eqs''16
+                gqs'''16
+                fs'''8
                 r8
                 r8
-                cs'''16
+                ef''16
                 r16
                 r8
-                c''''8
+                eqs''8
                 ~
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/10 {
-                    c''''8
-                    cs'''8
+                    eqs''8
+                    ef''8
                     ~
-                    cs'''4.
+                    ef''4.
                     \grace {
-                        c''''16
+                        dqs'''16
                     }
-                    fs'''8
+                    ef''8
                     ~
-                    fs'''8
+                    ef''8
                     \grace {
-                        cs'''16
+                        cqs''''16
+                    }
+                    aqs''8
+                    eqs''8
+                    \grace {
+                        ef''16
                     }
                     b'''8
-                    d'''8
-                    \grace {
-                        c''''16
-                    }
-                    cs'''8
                     ~
                 }
             }
             {
-                cs'''8
-                cs'''16
+                b'''8
                 b'''16
+                cqs''''16
                 r8
                 r8
+                ef''16
                 b'''16
-                c''''16
                 ~
-                c''''16
+                b'''16
                 r16
                 \grace {
-                    b'''16
+                    dqs'''16
                 }
-                cs'''16
+                cqs''''16
                 r16
             }
             {
                 r8.
                 \grace {
-                    b'''16
+                    cqs''''16
                 }
-                fs'''16
+                cs'''16
                 r8
                 r16
-                b'''8.
+                ef''8.
                 \grace {
-                    b'''16
+                    cqs''''16
                 }
                 fs'''16
                 r16
-                cs'''8
+                ef''8
                 ~
             }
             {
-                cs'''16
-                b'''16
+                ef''16
+                ef''16
                 r8.
-                g'''16
+                aqs''16
                 r8
-                cs'''16
+                gqs'''16
                 r16
+                dqs'''16
                 cs'''16
-                d'''16
                 ~
-                d'''16
-                g'''16
+                cs'''16
+                aqs''16
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/13 {
                     fs'''4
-                    fs'''8
+                    eqs''8
                     ~
-                    fs'''8
-                    d'''8
+                    eqs''8
+                    aqs''8
                     \grace {
-                        g'''16
+                        dqs'''16
                     }
+                    fs'''8
+                    af''8
+                    gqs'''4
+                    cs'''4
+                    ~
                     cs'''8
-                    d'''8
-                    fs'''4
-                    g'''4
-                    ~
-                    g'''8
                     \grace {
-                        d'''16
+                        af''16
                     }
-                    g'''8
+                    gqs'''8
                 }
             }
             {
-                fs'''16
-                d'''16
+                gqs'''16
+                dqs'''16
                 ~
-                d'''16
-                g'''8.
+                dqs'''16
+                cs'''8.
                 ~
-                g'''8
+                cs'''8
                 \grace {
-                    g'''16
+                    ef''16
                 }
-                fs'''16
+                af''16
                 r16
                 r4
             }
@@ -359,9 +359,9 @@
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/10 {
                     af''4.
-                    e''4.
+                    eqs''4.
                     ~
-                    e''4.
+                    eqs''4.
                     cs'''8
                     ~
                 }
@@ -373,9 +373,9 @@
                     af''4
                     ~
                     af''8
-                    e''8
+                    eqs''8
                     ~
-                    e''8
+                    eqs''8
                     af''8
                     ~
                     af''2.
@@ -413,29 +413,29 @@
                 \grace {
                     ef''16
                 }
-                e''16
+                eqs''16
                 ~
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/8 {
-                    e''4
-                    a''2.
+                    eqs''4
+                    aqs''2.
                     ~
                 }
             }
             {
-                a''2..
+                aqs''2..
                 ~
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/10 {
-                    a''4
-                    e''4.
-                    e''8
+                    aqs''4
+                    eqs''4.
+                    eqs''8
                     ~
-                    e''8
+                    eqs''8
                     cs'''8
                     ~
                     cs'''8
@@ -449,7 +449,7 @@
                         \grace {
                             cs'''16
                         }
-                        e''2
+                        eqs''2
                         ef''4
                         ~
                     }

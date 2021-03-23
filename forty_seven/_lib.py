@@ -15,7 +15,7 @@ metronome_marks = abjad.OrderedDict(
 
 sieves = abjad.OrderedDict(
     [
-        ("A", abjad.Pattern(indices=[0, 1], period=5)),
+        ("A", abjad.Pattern(indices=[0, 3], period=10)),
         ("B", abjad.Pattern(indices=[0, 2, 4, 5], period=7)),
         ("C", abjad.Pattern(indices=[0, 1, 2, 4, 8, 10], period=11)),
     ]
@@ -30,6 +30,13 @@ registrations = abjad.OrderedDict(
             (
                 start_pitch + abjad.NamedInterval(12),
                 stop_pitch + abjad.NamedInterval(-12),
+            ),
+        ),
+        (
+            "mid-high",
+            (
+                start_pitch + abjad.NamedInterval(12),
+                stop_pitch,
             ),
         ),
         ("high", (start_pitch + abjad.NamedInterval(24), stop_pitch)),

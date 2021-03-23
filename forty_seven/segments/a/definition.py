@@ -8,12 +8,14 @@ pitch_set_0 = pang.gen_pitches_from_sieve(
     sieve=forty_seven.sieves["A"],
     origin=0,
     pitch_range=forty_seven.registrations["middle"],
+    multiplier=0.5,
 )
 
 pitch_set_1 = pang.gen_pitches_from_sieve(
     sieve=forty_seven.sieves["A"],
     origin=0,
-    pitch_range=forty_seven.registrations["high"],
+    pitch_range=forty_seven.registrations["mid-high"],
+    multiplier=0.5,
 )
 
 sequence = pang.Sequence()
