@@ -9,6 +9,7 @@
 <<
     \context Staff = "FluteStaff"
     <<
+        \set Staff.midiInstrument = #"flute"
         \context Voice = "FluteVoice1"
         {
             {

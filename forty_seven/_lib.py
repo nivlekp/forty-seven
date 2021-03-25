@@ -92,5 +92,7 @@ def make_score_template(simultaneous=True):
     voice1 = abjad.Voice(name="FluteVoice1")
     voices = [voice1]
     staff = abjad.Staff(voices, name="FluteStaff", simultaneous=simultaneous)
+    literal = abjad.LilyPondLiteral(r'\set Staff.midiInstrument = #"flute"')
+    abjad.attach(literal, staff)
     score = abjad.Score([staff], name="forty-seven")
     return score
