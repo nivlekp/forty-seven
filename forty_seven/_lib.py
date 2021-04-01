@@ -1,3 +1,5 @@
+import random
+
 import abjad
 from abjadext import nauert
 
@@ -71,7 +73,6 @@ search_trees = abjad.OrderedDict(
     ]
 )
 
-
 q_schemas = abjad.OrderedDict(
     [
         ("A", nauert.MeasurewiseQSchema(search_tree=search_trees["A"])),
@@ -79,13 +80,32 @@ q_schemas = abjad.OrderedDict(
             "B",
             nauert.MeasurewiseQSchema(
                 search_tree=search_trees["B"],
-                tempo=metronome_marks["60"],
+                tempo=metronome_marks["72"],
                 time_signature=(7, 8),
                 use_full_measure=True,
             ),
         ),
     ]
 )
+
+overtone_series_intervals = [
+    0,
+    12,
+    19,
+    24,
+    28,
+    31,
+    34,
+    36,
+    38,
+    40,
+    41,
+    43,
+    44,
+    46,
+    47,
+    48,
+]
 
 
 def make_score_template(simultaneous=True):
@@ -96,3 +116,12 @@ def make_score_template(simultaneous=True):
     abjad.attach(literal, staff)
     score = abjad.Score([staff], name="forty-seven")
     return score
+
+
+def attach_harmonics_to_sequence(sequence, harmonic_indices=[1, 2, 3], seed=123456):
+    random.seed(seed)
+    for event in sequence:
+        index = random.choice(harmonic_indices)
+        harmonic_interval = overtone_series_intervals[index]
+        harmonics = pang.Harmonics(harmonic_interval)
+        pang.attach(harmonics, event)
