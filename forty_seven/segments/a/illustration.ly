@@ -11,137 +11,328 @@
         \context Voice = "FluteVoice1"
         {
             {
-                \tempo 4=72
-                \time 7/8
-                r16
-                af''16
-                ~
-                af''4
-                aqs''8.
-                eqs''16
-                ~
-                eqs''8.
-                ef''16
-                ~
-            }
-            {
-                ef''16
-                \grace {
-                    ef''16
-                }
-                aqs''16
-                ef''8
-                \grace {
-                    ef''16
-                }
-                ef''8
-                eqs''16
-                ef''16
-                r8
-                ef''16
-                ef''8.
-            }
-            {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/10
                 {
-                    af''8
-                    r4
-                    r4
-                    r8
-                    cs'''8
-                    ~
-                    cs'''8
-                    af''8
-                    ~
-                    af''4
-                    cs'''4
-                    ~
+                    \times 4/5
+                    {
+                        \tempo 4=72
+                        \time 7/8
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            dqf'''
+                        >4
+                        r8
+                        r4
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 6/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            gqf''
+                        >4.
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            gqf''
+                        >8
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                f'
+                                f''
+                            >16
+                        }
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            gqf''
+                        >8
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            gqf''
+                        >4
+                        ~
+                    }
                 }
             }
             {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 4/7
                 {
-                    cs'''8
-                    cs'''4
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        gqf'
+                        gqf''
+                    >8
+                    \grace {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            bqs''
+                        >16
+                    }
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        gqf'
+                        gqf''
+                    >16
                     ~
-                    cs'''4
-                    ~
-                    cs'''8
-                    aqs''8
-                    cs'''4
-                    aqs''4
-                    aqs''4
-                    ~
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        gqf'
+                        gqf''
+                    >4
+                }
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 5/7
+                {
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        bqs'
+                        bqs''
+                    >2..
                 }
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/12
                 {
-                    aqs''2
-                    ~
-                    aqs''4
-                    \grace {
-                        cs'''16
-                        cs'''16
+                    \times 4/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            bqs''
+                        >2.
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            bqs''
+                        >4
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                bqs'
+                                bqs''
+                            >16
+                        }
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            c'''
+                        >4
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            c'''
+                        >2
                     }
-                    aqs''4
-                    eqs''2
-                    ~
+                    \times 2/3
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >4
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >2
+                        ~
+                    }
                 }
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/10
                 {
-                    eqs''8
-                    \grace {
-                        eqs''16
+                    \times 2/3
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >2
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >4
                     }
-                    eqs''4
-                    eqs''2
-                    \grace {
-                        af''16
-                        ef''16
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 6/7
+                    {
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                c'
+                                g''
+                            >16
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                dqf'
+                                aqf''
+                            >16
+                        }
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >4.
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >2
                     }
-                    af''8
-                    ef''8
-                    eqs''4
-                    ~
-                    eqs''8
-                    \grace {
-                        ef''16
-                    }
-                    af''8
-                    ~
                 }
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/12
                 {
-                    af''4
-                    ef''8
-                    ~
-                    ef''8
-                    ef''8
-                    r1
+                    \times 2/3
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >1
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            dqf'''
+                        >2
+                    }
+                    \times 2/3
+                    {
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                bf'
+                                f'''
+                            >16
+                        }
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            gqf'''
+                        >2
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >4
+                        ~
+                    }
                 }
             }
             {
-                r2..
+                <
+                    \tweak NoteHead.style #'harmonic
+                    bf'
+                    bf''
+                >2..
+                ~
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/8
                 {
-                    r4.
-                    r8
-                    cqs''''8
-                    ~
-                    cqs''''1
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        bf'
+                        bf''
+                    >4
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        gqf'
+                        gqf''
+                    >4
+                    \times 2/3
+                    {
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                gqf'
+                                gqf''
+                            >16
+                        }
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            f''
+                        >2
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                c'
+                                c''
+                            >16
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                c'
+                                c''
+                            >16
+                        }
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >4
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12
+                {
+                    \times 4/5
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >4
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            dqf'
+                            aqf''
+                        >8
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            dqf'
+                            aqf''
+                        >4
+                        ~
+                    }
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        dqf'
+                        aqf''
+                    >2
+                    \grace {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            c'''
+                        >16
+                    }
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        gqf'
+                        dqf'''
+                    >2
                     ~
                 }
             }
@@ -149,9 +340,37 @@
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/10
                 {
-                    cqs''''2.
-                    ~
-                    cqs''''4
+                    \times 4/5
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            dqf'''
+                        >8.
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            dqf'''
+                        >16
+                        r16
+                    }
+                    \times 4/7
+                    {
+                        r4
+                        cqs''''2
+                        ~
+                        cqs''''1
+                        ~
+                    }
+                }
+            }
+            {
+                cqs''''4.
+                ~
+                \times 2/3
+                {
+                    cqs''''2
                     dqs'''4
                     ~
                 }
@@ -160,427 +379,998 @@
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/10
                 {
-                    dqs'''2.
-                    af''4.
-                    \grace {
-                        cs'''16
-                        cs'''16
+                    \times 4/5
+                    {
+                        dqs'''2.
+                        ~
+                        dqs'''4
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            g''
+                        >4
                     }
-                    cs'''8
-                }
-            }
-            {
-                cs'''8
-                aqs''16
-                aqs''16
-                aqs''16
-                r16
-                r4
-                eqs''16
-                ef''16
-                r16
-                ef''16
-            }
-            {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
-                {
-                    eqs''4.
-                    aqs''8
-                    ef''8
-                    ~
-                    ef''8
-                    ef''8
-                    ~
-                    ef''4
-                    ~
-                    ef''8
-                    \grace {
-                        eqs''16
+                    \times 4/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            g''
+                        >8
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            g''
+                        >16
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            g''
+                        >4
+                        ~
                     }
-                    ef''8
-                    ef''8
-                    ef''8
-                    ~
                 }
-            }
-            {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
-                {
-                    ef''4.
-                    ~
-                    ef''8
-                    cs'''8
-                    ef''8
-                    ef''8
-                    ~
-                    ef''8
-                    af''8
-                    ~
-                    af''8
-                    cs'''8
-                    cs'''8
-                    cs'''8
-                }
-            }
-            {
-                aqs''4
-                r8
-                r4
-                cs'''8
-                ef''16
-                r16
-            }
-            {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
-                {
-                    r8
-                    \grace {
-                        ef''16
-                    }
-                    eqs''4
-                    ef''4
-                    ~
-                    ef''8
-                    ef''8
-                    b'''4
-                    b'''4
-                    cs'''8
-                    aqs''8
-                }
-            }
-            {
-                eqs''16
-                r16
-                r4
-                ef''8
-                aqs''8
-                ~
-                aqs''16
-                cqs''''8.
-                ~
-            }
-            {
-                cqs''''16
-                b'''16
-                eqs''16
-                gqs'''16
-                ~
-                gqs'''16
-                r16
-                r2
-            }
-            {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
-                {
-                    r4.
-                    r4
-                    fs'''2.
-                    ef''4
-                    ~
-                }
-            }
-            {
-                ef''16
-                eqs''16
-                ~
-                eqs''16
-                \grace {
-                    ef''16
-                }
-                eqs''16
-                eqs''8
-                ~
-                eqs''4
-                ~
-                eqs''16
-                cqs''''16
-                ~
-                cqs''''16
-                b'''16
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/10
                 {
-                    fs'''8
-                    r8
-                    af''4
-                    eqs''4
-                    dqs'''8
-                    ef''8
+                    \times 4/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            g''
+                        >4
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >8
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >4
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >8
+                        ~
+                        r8
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 3/5
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >2.
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >2
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/5
+                {
+                    \grace {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            dqf'
+                            aqf''
+                        >16
+                    }
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        c'
+                        g''
+                    >4.
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        gqf'
+                        gqf''
+                    >4
+                }
+                \times 4/7
+                {
+                    \grace {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            gqf''
+                        >16
+                    }
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        bqs'
+                        bqs''
+                    >4.
+                    ~
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        bqs'
+                        bqs''
+                    >8
+                    \grace {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            gqf'''
+                        >16
+                    }
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        bqs'
+                        gqf'''
+                    >8
+                    ~
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        bqs'
+                        gqf'''
+                    >4
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10
+                {
+                    \times 4/7
+                    {
+                        r8
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            f''
+                        >4
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            f''
+                        >2
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 6/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >8
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            dqf'''
+                        >4
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            dqf'''
+                        >2
+                    }
+                }
+            }
+            {
+                <
+                    \tweak NoteHead.style #'harmonic
+                    c'
+                    c''
+                >8
+                r4
+                r4
+                \times 4/5
+                {
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        gqf'
+                        dqf'''
+                    >8.
+                    ~
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        gqf'
+                        dqf'''
+                    >16
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        dqf'
+                        dqf''
+                    >16
+                    ~
+                }
+            }
+            {
+                <
+                    \tweak NoteHead.style #'harmonic
+                    dqf'
+                    dqf''
+                >8
+                <
+                    \tweak NoteHead.style #'harmonic
+                    f'
+                    f''
+                >4
+                ~
+                <
+                    \tweak NoteHead.style #'harmonic
+                    f'
+                    f''
+                >2
+                ~
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10
+                {
+                    \times 2/3
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            f''
+                        >4
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                c'
+                                g''
+                            >16
+                            b'''16
+                        }
+                        b'''2
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 6/7
+                    {
+                        \grace {
+                            cs'''16
+                            aqs''16
+                        }
+                        eqs''4
+                        \grace {
+                            ef''16
+                        }
+                        aqs''8
+                        ~
+                        aqs''2
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10
+                {
+                    cqs''''8
+                    b'''8
+                    \times 4/5
+                    {
+                        \grace {
+                            eqs''16
+                        }
+                        gqs'''4
+                        r2
+                        r2
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12
+                {
+                    \times 4/7
+                    {
+                        r2.
+                        r4
+                        fs'''4
+                        ~
+                        fs'''2
+                        ~
+                    }
+                    fs'''4
+                    ef''4
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10
+                {
+                    \times 4/7
+                    {
+                        eqs''2
+                        \grace {
+                            ef''16
+                            eqs''16
+                        }
+                        eqs''4
+                        ~
+                        eqs''1
+                    }
+                    \times 4/5
+                    {
+                        \grace {
+                            b'''16
+                        }
+                        fs'''8.
+                        ~
+                        fs'''8
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12
+                {
+                    \times 4/7
+                    {
+                        r2.
+                        \grace {
+                            af''16
+                        }
+                        eqs''1
+                    }
+                    \times 4/7
+                    {
+                        \grace {
+                            dqs'''16
+                        }
+                        ef''4.
+                        \grace {
+                            cqs''''16
+                        }
+                        aqs''2
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10
+                {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 6/7
+                    {
+                        eqs''4.
+                        ~
+                        eqs''8
+                        \grace {
+                            ef''16
+                            b'''16
+                        }
+                        b'''8
+                        ~
+                        b'''4
+                    }
+                    \times 4/7
+                    {
+                        \grace {
+                            cqs''''16
+                        }
+                        ef''4.
+                        b'''2
+                        ~
+                    }
+                }
+            }
+            {
+                \times 4/7
+                {
+                    b'''4.
+                    \grace {
+                        dqs'''16
+                    }
+                    cqs''''2
+                }
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 6/7
+                {
                     \grace {
                         cqs''''16
-                    }
-                    aqs''8
-                    eqs''8
-                }
-            }
-            {
-                r8.
-                ef''16
-                ~
-                ef''16
-                \grace {
-                    b'''16
-                }
-                b'''16
-                r8
-                \grace {
-                    cqs''''16
-                }
-                ef''16
-                r16
-                b'''16
-                r8.
-            }
-            {
-                r8.
-                dqs'''16
-                cqs''''8
-                ~
-                cqs''''16
-                \grace {
-                    cqs''''16
-                }
-                cs'''16
-                ef''16
-                \grace {
-                    cqs''''16
-                }
-                fs'''16
-                ~
-                fs'''16
-                ef''8.
-            }
-            {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
-                {
-                    ef''8
-                    aqs''8
-                    gqs'''8
-                    r4
-                    dqs'''4
-                    cs'''8
-                    aqs''8
-                    \grace {
-                        fs'''16
-                    }
-                    eqs''4
-                    \grace {
-                        aqs''16
-                    }
-                    dqs'''4
-                }
-            }
-            {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
-                {
-                    fs'''8
-                    af''8
-                    r8
-                    gqs'''4
-                    \grace {
                         cs'''16
+                        ef''16
+                        cqs''''16
                     }
-                    af''8
-                    gqs'''8
-                    ~
-                    gqs'''8
-                    gqs'''8
-                    dqs'''4
-                    cs'''4
+                    fs'''8.
+                    ef''4
                 }
-            }
-            {
-                ef''16
-                r16
-                \grace {
-                    af''16
-                }
-                ef''8
-                af''16
-                r16
-                r8
-                cqs''''16
-                af''16
-                ~
-                af''16
-                gqs'''8.
-            }
-            {
-                ef''16
-                \grace {
-                    b'''16
-                }
-                cs'''16
-                af''16
-                af''16
-                ~
-                af''16
-                \grace {
-                    gqs'''16
-                }
-                gqs'''16
-                ~
-                gqs'''16
-                \grace {
-                    aqs''16
-                }
-                eqs''8.
-                ~
-                eqs''16
-                \grace {
-                    gqs'''16
-                }
-                eqs''16
-                aqs''16
-                cs'''16
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/12
                 {
-                    r8
-                    b'''4
-                    ~
-                    b'''8
-                    af''8
-                    ~
-                    af''8
-                    eqs''8
-                    ~
-                    eqs''8
-                    cs'''8
-                    ~
-                    cs'''4
-                    ~
-                    cs'''8
-                    \grace {
-                        cs'''16
-                        cs'''16
+                    \times 4/7
+                    {
+                        \grace {
+                            ef''16
+                            aqs''16
+                        }
+                        gqs'''2.
+                        ~
+                        gqs'''4
+                        \grace {
+                            dqs'''16
+                        }
+                        cs'''4
+                        ~
+                        cs'''2
                     }
-                    cs'''8
+                    \times 4/7
+                    {
+                        \grace {
+                            aqs''16
+                            fs'''16
+                        }
+                        eqs''4.
+                        ~
+                        eqs''8
+                        \grace {
+                            aqs''16
+                        }
+                        dqs'''8
+                        ~
+                        dqs'''4
+                    }
                 }
-            }
-            {
-                ef''16
-                r16
-                r8.
-                ef''16
-                r8.
-                cs'''16
-                r8
-                cs'''16
-                r16
-            }
-            {
-                cs'''16
-                cs'''8.
-                cs'''16
-                af''16
-                ~
-                af''8
-                cs'''8
-                r16
-                cs'''8.
-            }
-            {
-                r8.
-                cs'''8.
-                af''8
-                cs'''16
-                \grace {
-                    cs'''16
-                }
-                aqs''16
-                r4
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/12
                 {
-                    r4.
-                    cs'''8
-                    cs'''8
-                    cs'''4
-                    ~
-                    cs'''8
-                    cs'''8
-                    ~
-                    cs'''4
-                    ~
-                    cs'''8
-                    cs'''8
-                    ~
+                    \times 4/5
+                    {
+                        \grace {
+                            af''16
+                        }
+                        fs'''2.
+                        \grace {
+                            gqs'''16
+                            cs'''16
+                            af''16
+                        }
+                        gqs'''2
+                    }
+                    \times 4/7
+                    {
+                        \grace {
+                            gqs'''16
+                        }
+                        dqs'''4.
+                        ~
+                        dqs'''8
+                        cs'''8
+                        ~
+                        cs'''4
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12
+                {
+                    \times 4/7
+                    {
+                        ef''4.
+                        \grace {
+                            af''16
+                        }
+                        ef''2
+                    }
+                    \times 4/7
+                    {
+                        af''2.
+                        \grace {
+                            cqs''''16
+                            af''16
+                        }
+                        gqs'''1
+                    }
                 }
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 7/10
                 {
-                    cs'''4.
-                    r4.
-                    eqs''8
-                    r8
-                    af''4
+                    \times 4/5
+                    {
+                        \grace {
+                            b'''16
+                            cs'''16
+                        }
+                        ef''4
+                        \grace {
+                            af''16
+                        }
+                        af''8
+                        ~
+                        af''4
+                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 6/7
+                    {
+                        \grace {
+                            gqs'''16
+                            gqs'''16
+                            aqs''16
+                        }
+                        eqs''4.
+                        ~
+                        eqs''8
+                        ~
+                        \grace {
+                            gqs'''16
+                            eqs''16
+                        }
+                        aqs''8
+                        ~
+                        aqs''4
+                    }
                 }
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/8
                 {
-                    ef''4
-                    ef''8
-                    eqs''4
-                    cs'''2
-                    cs'''8
-                    aqs''8
-                    \grace {
-                        cs'''16
+                    \times 4/7
+                    {
+                        \grace {
+                            b'''16
+                        }
+                        cs'''4.
+                        ~
+                        cs'''8
+                        af''8
+                        ~
+                        af''4
                     }
-                    cs'''4
+                    \times 4/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >4.
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >8
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >8
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >4
+                    }
                 }
-            }
-            {
-                r8
-                \grace {
-                    ef''16
-                }
-                af''8
-                aqs''8
-                ~
-                aqs''16
-                aqs''16
-                ~
-                aqs''16
-                af''16
-                ~
-                af''8.
-                cs'''16
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/10
                 {
-                    cs'''4.
-                    cs'''4
-                    aqs''4
-                    \grace {
-                        cs'''16
+                    \times 4/5
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            dqf'''
+                        >2.
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            gqf'
+                            dqf'''
+                        >4
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                c'
+                                c''
+                            >16
+                        }
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >4
+                        ~
                     }
-                    aqs''8
-                    cs'''8
-                    cs'''8
-                    cs'''8
+                    \times 4/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            c''
+                        >16
+                        r8
+                        r4
+                    }
+                }
+            }
+            {
+                \times 4/5
+                {
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        c'
+                        c''
+                    >4.
                     ~
-                    cs'''8
-                    r8
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        c'
+                        c''
+                    >8
+                    \grace {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            dqf'
+                            aqf''
+                        >16
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            g''
+                        >16
+                    }
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        c'
+                        c''
+                    >8
+                }
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 6/7
+                {
+                    r8.
+                    r16
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        c'
+                        g''
+                    >16
+                    ~
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        c'
+                        g''
+                    >8
+                    ~
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/8
+                {
+                    \times 2/3
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            g''
+                        >4
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            c'''
+                        >2
+                    }
+                    \times 2/3
+                    {
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                bf'
+                                bf''
+                            >16
+                        }
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            f''
+                        >2
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            bqs''
+                        >4
+                        ~
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10
+                {
+                    \times 2/3
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            bqs''
+                        >4
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            bqs''
+                        >8
+                    }
+                    \times 4/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >2.
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >4
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                bqs'
+                                bqs''
+                            >16
+                        }
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >4
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >2
+                        ~
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10
+                {
+                    \times 4/5
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >2.
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >4
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            f'''
+                        >4
+                    }
+                    \times 4/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            gqf'''
+                        >8.
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            gqf'''
+                        >8
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            gqf'''
+                        >16
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            bqs''
+                        >16
+                        ~
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/8
+                {
+                    \times 4/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bqs'
+                            bqs''
+                        >4
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >8
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >4
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            bf'
+                            bf''
+                        >8
+                        ~
+                        \grace {
+                            <
+                                \tweak NoteHead.style #'harmonic
+                                f'
+                                c'''
+                            >16
+                        }
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            c'''
+                        >8
+                    }
+                    \times 4/7
+                    {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            c'''
+                        >2..
+                    }
+                }
+            }
+            {
+                \times 4/7
+                {
+                    r8.
+                    r16
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        f'
+                        f''
+                    >16
+                    ~
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        f'
+                        f''
+                    >8
+                }
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 5/7
+                {
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        gqf'
+                        dqf'''
+                    >4.
+                    ~
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        gqf'
+                        dqf'''
+                    >8
+                    \grace {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            c'
+                            g''
+                        >16
+                    }
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        f'
+                        c'''
+                    >8
+                    ~
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        f'
+                        c'''
+                    >4
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 3/5
+                {
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        c'
+                        c''
+                    >4.
+                    ~
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        c'
+                        c''
+                    >8
+                    \grace {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            dqf'
+                            aqf''
+                        >16
+                    }
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        c'
+                        g''
+                    >8
+                }
+                \times 2/3
+                {
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        f'
+                        f''
+                    >4
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        c'
+                        c''
+                    >2
+                    ~
+                }
+            }
+            {
+                <
+                    \tweak NoteHead.style #'harmonic
+                    c'
+                    c''
+                >8
+                <
+                    \tweak NoteHead.style #'harmonic
+                    c'
+                    g''
+                >8
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 5/7
+                {
+                    \grace {
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            f''
+                        >16
+                    }
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        bf'
+                        f'''
+                    >8
+                    r4
+                    r2
                 }
             }
         }

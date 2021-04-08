@@ -1,6 +1,7 @@
 import random
 
 import abjad
+import pang
 from abjadext import nauert
 
 instruments = abjad.OrderedDict([("Flute", abjad.Flute())])
@@ -70,16 +71,42 @@ search_trees = abjad.OrderedDict(
                 },
             ),
         ),
+        (
+            "C",
+            nauert.WeightedSearchTree(
+                definition={
+                    "divisors": (2, 3, 5, 7),
+                    "max_depth": 2,
+                    "max_divisions": 2,
+                },
+            ),
+        ),
     ]
 )
 
 q_schemas = abjad.OrderedDict(
     [
-        ("A", nauert.MeasurewiseQSchema(search_tree=search_trees["A"])),
+        (
+            "A",
+            nauert.MeasurewiseQSchema(
+                search_tree=search_trees["A"],
+                tempo=metronome_marks["72"],
+                time_signature=(7, 8),
+            ),
+        ),
         (
             "B",
             nauert.MeasurewiseQSchema(
                 search_tree=search_trees["B"],
+                tempo=metronome_marks["72"],
+                time_signature=(7, 8),
+                use_full_measure=True,
+            ),
+        ),
+        (
+            "C",
+            nauert.MeasurewiseQSchema(
+                search_tree=search_trees["C"],
                 tempo=metronome_marks["72"],
                 time_signature=(7, 8),
                 use_full_measure=True,
