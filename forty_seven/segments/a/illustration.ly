@@ -94,9 +94,20 @@
                 {
                     <
                         \tweak NoteHead.style #'harmonic
+                        gqf'
+                        dqf'''
+                    >8
+                    <
+                        \tweak NoteHead.style #'harmonic
                         bqs'
                         bqs''
-                    >2..
+                    >4
+                    ~
+                    <
+                        \tweak NoteHead.style #'harmonic
+                        bqs'
+                        bqs''
+                    >2
                 }
             }
             {
@@ -433,25 +444,12 @@
                             \tweak NoteHead.style #'harmonic
                             c'
                             c''
-                        >4
-                        ~
-                        <
-                            \tweak NoteHead.style #'harmonic
-                            c'
-                            c''
-                        >8
-                        ~
-                        r8
+                        >2
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 3/5
                     {
-                        <
-                            \tweak NoteHead.style #'harmonic
-                            c'
-                            c''
-                        >2.
-                        ~
+                        r2.
                         <
                             \tweak NoteHead.style #'harmonic
                             c'
@@ -700,12 +698,13 @@
                     }
                     \times 4/5
                     {
+                        cqs''''8.
+                        ~
+                        cqs''''16
                         \grace {
                             b'''16
                         }
-                        fs'''8.
-                        ~
-                        fs'''8
+                        fs'''16
                     }
                 }
             }
@@ -905,14 +904,11 @@
                         }
                         eqs''4.
                         ~
-                        eqs''8
-                        ~
+                        eqs''4
                         \grace {
                             gqs'''16
                             eqs''16
                         }
-                        aqs''8
-                        ~
                         aqs''4
                     }
                 }
@@ -1218,14 +1214,10 @@
                             \tweak NoteHead.style #'harmonic
                             bf'
                             bf''
-                        >4
-                        ~
-                        <
-                            \tweak NoteHead.style #'harmonic
-                            bf'
-                            bf''
-                        >8
-                        ~
+                        >2
+                    }
+                    \times 4/7
+                    {
                         \grace {
                             <
                                 \tweak NoteHead.style #'harmonic
@@ -1237,15 +1229,24 @@
                             \tweak NoteHead.style #'harmonic
                             f'
                             c'''
-                        >8
-                    }
-                    \times 4/7
-                    {
+                        >4.
+                        ~
                         <
                             \tweak NoteHead.style #'harmonic
                             f'
                             c'''
-                        >2..
+                        >8
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            c'''
+                        >8
+                        ~
+                        <
+                            \tweak NoteHead.style #'harmonic
+                            f'
+                            c'''
+                        >4
                     }
                 }
             }
