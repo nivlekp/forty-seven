@@ -5,6 +5,7 @@
 -   Harmonics
 -   Multiphonics
 -   Key clicks
+-   Flutter tounge
 
 ## How to choose which extended techniques to use?
 

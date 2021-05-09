@@ -2,7 +2,7 @@ import forty_seven
 import pang
 
 template = forty_seven.make_score_template()
-maker = pang.SegmentMaker(score_template=template)
+maker = pang.SegmentMaker(score_template=template, segment_name="a")
 
 pitch_set_0 = pang.gen_pitches_from_sieve(
     sieve=forty_seven.sieves["A"],
@@ -61,6 +61,9 @@ sequence.insert(
         sound_points_generator=sound_points_generator, sequence_duration=20
     ),
 )
+
+# This is for debugging
+# forty_seven.attach_red_to_sequence(sequence)
 
 command = pang.QuantizeSequenceCommand(sequence, q_schema=forty_seven.q_schemas["C"])
 scope = pang.Scope(voice_name="FluteVoice1")

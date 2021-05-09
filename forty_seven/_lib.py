@@ -152,3 +152,16 @@ def attach_harmonics_to_sequence(sequence, harmonic_indices=[1, 2, 3], seed=1234
         harmonic_interval = overtone_series_intervals[index]
         harmonics = pang.Harmonics(harmonic_interval)
         pang.attach(harmonics, event)
+
+
+def attach_red_to_sequence(sequence):
+    """
+    Attach the color red to every second pitched event in the sequence.
+    """
+    index = 0
+    for event in sequence:
+        if event.pitch is not None:
+            if index % 2 == 0:
+                color = pang.Red()
+                pang.attach(color, event)
+            index += 1

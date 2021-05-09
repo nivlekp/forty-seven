@@ -465,14 +465,14 @@
                     \grace {
                         <
                             \tweak NoteHead.style #'harmonic
-                            dqf'
-                            aqf''
+                            c'
+                            g''
                         >16
                     }
                     <
                         \tweak NoteHead.style #'harmonic
-                        c'
-                        g''
+                        dqf'
+                        aqf''
                     >4.
                     <
                         \tweak NoteHead.style #'harmonic
@@ -829,9 +829,9 @@
                     \times 4/5
                     {
                         \grace {
-                            af''16
+                            fs'''16
                         }
-                        fs'''2.
+                        af''2.
                         \grace {
                             gqs'''16
                             cs'''16
@@ -883,10 +883,10 @@
                     \times 4/5
                     {
                         \grace {
+                            ef''16
                             b'''16
-                            cs'''16
                         }
-                        ef''4
+                        cs'''4
                         \grace {
                             af''16
                         }
@@ -920,11 +920,11 @@
                     \times 4/7
                     {
                         \grace {
-                            b'''16
+                            cs'''16
                         }
-                        cs'''4.
+                        b'''4.
                         ~
-                        cs'''8
+                        b'''8
                         af''8
                         ~
                         af''4

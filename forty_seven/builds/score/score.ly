@@ -8,6 +8,7 @@
 \score {
     {
         \include "_segments/a.ly"
+        \include "_segments/b.ly"
     }
     \layout { }
     \midi { }
