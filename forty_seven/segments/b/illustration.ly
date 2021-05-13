@@ -11,19 +11,30 @@
         \context Voice = "FluteVoice1"
         {
             {
-                r4.
-                r16
-                dqf'''8.
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 5/7
+                {
+                    r4.
+                    r4
+                    dqf'''4
+                }
                 dqs'''8
                 dqf'''8
-                ~
             }
             {
-                dqf'''16
-                cqs'''16
-                bqs''4
-                cqs'''16
-                bqs''16
+                \times 4/5
+                {
+                    \grace {
+                        cqs'''16
+                    }
+                    bqs''4.
+                    ~
+                    bqs''8
+                    \grace {
+                        cqs'''16
+                    }
+                    bqs''8
+                }
                 \grace {
                     b''16
                     bf''16
@@ -35,304 +46,409 @@
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/12
                 {
-                    a''4
-                    bf''8
-                    ~
-                    bf''8
-                    a''8
-                    ~
-                    a''4
-                    \grace {
-                        bf''16
+                    \times 4/7
+                    {
+                        a''4.
+                        bf''2
                     }
-                    g'8
-                    af'8
-                    ~
-                    af'2
-                    ~
+                    \times 2/3
+                    {
+                        a''2
+                        \grace {
+                            bf''16
+                            g'16
+                        }
+                        af'1
+                    }
                 }
             }
             {
-                af'16
-                a'16
-                af'8
                 a'8
-                ~
-                a'16
-                af'8.
-                ~
-                af'4
-                ~
+                af'8
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 5/6
+                {
+                    a'4
+                    af'2
+                }
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/8
                 {
-                    af'8
-                    a'8
-                    aqs'8
-                    ~
-                    aqs'4
-                    a'8
-                    af'8
+                    \times 2/3
+                    {
+                        a'4
+                        aqs'2
+                    }
                     \grace {
+                        a'16
+                        af'16
                         a'16
                         aqs'16
                     }
                     bqf'4
-                    aqs'8
                     \grace {
+                        aqs'16
                         dqf'''16
                     }
-                    dqs'''8
-                    ~
                     dqs'''4
                 }
             }
             {
-                ef'''16
-                dqs'''16
-                dqf'''16
-                dqs'''16
-                ef'''8
-                e'''16
-                f'''16
-                ~
-                f'''16
-                fs'''16
-                gqf'''16
-                fs'''16
-                gqf'''8
-                ~
-            }
-            {
-                gqf'''16
-                gqs'''16
-                ~
-                gqs'''16
-                g'16
-                fs'16
-                g'16
-                ~
-                g'4
-                fs'8
-                r8
-            }
-            {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 6/7
                 {
-                    g'4.
-                    ~
-                    g'8
-                    af'8
-                    ~
-                    af'8
-                    g'8
-                    af'4
-                    ~
-                    af'8
-                    g'8
-                    ~
-                    g'4
-                }
-            }
-            {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
-                {
-                    fs'8
-                    fqs'4
-                    eqs'8
-                    fqs'8
-                    ~
-                    fqs'8
                     \grace {
-                        dqf'''16
+                        ef'''16
+                        dqs'''16
                     }
-                    cqs'''8
+                    dqf'''8.
                     ~
-                    cqs'''4
-                    dqf'''2
-                    ~
-                }
-            }
-            {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
-                {
-                    dqf'''8
-                    dqs'''4
-                    dqf'''8
-                    dqs'''8
-                    ~
-                    dqs'''8
-                    dqf'''8
-                    ~
-                    dqf'''4
-                    dqs'''2
-                }
-            }
-            {
-                dqf'''16
-                cqs'''8.
-                dqf'''16
-                cqs'''16
-                ~
-                cqs'''16
-                bqs''16
-                g'8
-                fs'16
-                fqs'16
-                ~
-                fqs'16
-                eqs'16
-            }
-            {
-                fqs'8
-                eqs'16
-                eqf'16
-                ~
-                eqf'16
-                \grace {
-                    eqs'16
-                }
-                eqf'16
-                ~
-                eqf'8.
-                dqs'16
-                ~
-                dqs'4
-                ~
-            }
-            {
-                dqs'8
-                eqf'4
-                dqs'16
-                dqf'''16
-                ~
-                dqf'''16
-                cqs'''16
-                dqf'''8.
-                dqs'''16
-            }
-            {
-                r16
-                dqf'''16
-                r4
-                dqs'''16
-                dqf'''16
-                ~
-                dqf'''16
-                r16
-                dqs'''16
-                ef'''16
-                e'''8
-                ~
-            }
-            {
-                e'''16
-                ef'''16
-                ~
-                ef'''16
-                r16
-                g'8
-                fs'2
-                ~
-            }
-            {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
-                {
-                    fs'4
-                    g'8
-                    ~
-                    g'2.
-                    ~
-                    g'8
-                    fs'8
-                    fqs'4
-                    ~
-                }
-            }
-            {
-                \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
-                {
-                    fqs'8
-                    fs'4
-                    \grace {
-                        g'16
-                    }
-                    af'4
-                    \grace {
-                        g'16
-                    }
-                    fs'4
-                    \grace {
-                        fqs'16
-                    }
-                    dqf'''4
+                    dqf'''16
                     \grace {
                         dqs'''16
                     }
-                    dqf'''4
+                    ef'''16
                     ~
-                    dqf'''8
+                    ef'''8
+                }
+                \times 4/7
+                {
+                    \grace {
+                        e'''16
+                    }
+                    f'''4.
+                    ~
+                    f'''8
+                    \grace {
+                        fs'''16
+                        gqf'''16
+                        fs'''16
+                    }
+                    gqf'''8
+                    ~
+                    gqf'''4
+                }
+            }
+            {
+                gqs'''4
+                \grace {
+                    g'16
+                    fs'16
+                }
+                g'8
+                ~
+                g'4
+                \times 4/5
+                {
+                    fs'8
+                    r16
                     r8
                 }
             }
             {
-                r16
-                dqs'''16
-                r4
-                r16
-                dqf'''8.
-                dqs'''16
-                ef'''16
-                dqs'''8
-                ~
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/8
+                {
+                    \times 4/7
+                    {
+                        g'4.
+                        ~
+                        g'8
+                        af'8
+                        ~
+                        af'4
+                    }
+                    \times 4/7
+                    {
+                        \grace {
+                            g'16
+                        }
+                        af'4.
+                        ~
+                        af'8
+                        g'8
+                        ~
+                        g'4
+                    }
+                }
             }
             {
                 \tweak text #tuplet-number::calc-fraction-text
-                \times 7/13
+                \times 7/8
                 {
-                    dqs'''8
                     \grace {
-                        dqf'''16
+                        fs'16
                     }
-                    dqs'''8
-                    g'8
-                    ~
-                    g'8
-                    fs'8
-                    ~
-                    fs'2
-                    ~
-                    fs'8
+                    fqs'4
                     \grace {
-                        fqs'16
+                        eqs'16
                     }
-                    fs'8
-                    ~
-                    fs'4
+                    fqs'4
+                    \times 4/5
+                    {
+                        \grace {
+                            dqf'''16
+                        }
+                        cqs'''4
+                        dqf'''8
+                        ~
+                        dqf'''4
+                    }
                 }
             }
             {
-                \grace {
-                    g'16
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 6/7
+                {
+                    dqs'''8.
+                    ~
+                    dqs'''16
+                    \grace {
+                        dqf'''16
+                    }
+                    dqs'''16
+                    ~
+                    dqs'''8
                 }
-                fs'8
-                g'8.
-                fs'16
-                ~
-                fs'16
-                g'16
-                r8
-                fs'16
-                r8.
+                dqf'''4
+                dqs'''4
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/8
+                {
+                    \times 4/7
+                    {
+                        \grace {
+                            dqf'''16
+                        }
+                        cqs'''4.
+                        ~
+                        cqs'''8
+                        \grace {
+                            dqf'''16
+                        }
+                        cqs'''8
+                        ~
+                        cqs'''4
+                    }
+                    \times 4/7
+                    {
+                        \grace {
+                            bqs''16
+                        }
+                        g'4.
+                        \grace {
+                            fs'16
+                        }
+                        fqs'2
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12
+                {
+                    \grace {
+                        eqs'16
+                    }
+                    fqs'4
+                    \grace {
+                        eqs'16
+                    }
+                    eqf'4
+                    \times 4/7
+                    {
+                        \grace {
+                            eqs'16
+                        }
+                        eqf'2.
+                        dqs'1
+                        ~
+                    }
+                }
+            }
+            {
+                dqs'8
+                eqf'4
+                \grace {
+                    dqs'16
+                }
+                dqf'''4
+                \grace {
+                    cqs'''16
+                }
+                dqf'''4
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/8
+                {
+                    \times 4/7
+                    {
+                        dqs'''8
+                        dqf'''4
+                        ~
+                        dqf'''2
+                    }
+                    \grace {
+                        dqs'''16
+                    }
+                    dqf'''4
+                    \grace {
+                        dqs'''16
+                        ef'''16
+                    }
+                    e'''4
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12
+                {
+                    \times 4/5
+                    {
+                        ef'''4.
+                        r4
+                    }
+                    \times 4/7
+                    {
+                        g'4
+                        fs'2
+                        ~
+                        fs'1
+                        ~
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/10
+                {
+                    \times 4/5
+                    {
+                        fs'4
+                        g'2
+                        ~
+                        g'2
+                    }
+                    \times 4/5
+                    {
+                        fs'16
+                        fqs'8
+                        ~
+                        fqs'8
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/8
+                {
+                    \times 4/7
+                    {
+                        fs'4.
+                        ~
+                        fs'8
+                        \grace {
+                            g'16
+                            af'16
+                            g'16
+                        }
+                        fs'8
+                        ~
+                        fs'4
+                    }
+                    \times 4/7
+                    {
+                        \grace {
+                            fqs'16
+                        }
+                        dqf'''4.
+                        \grace {
+                            dqs'''16
+                        }
+                        dqf'''2
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/8
+                {
+                    \times 4/5
+                    {
+                        r8
+                        dqs'''4
+                        ~
+                        dqs'''4
+                    }
+                    \times 4/7
+                    {
+                        dqf'''4.
+                        ~
+                        dqf'''8
+                        \grace {
+                            dqs'''16
+                            ef'''16
+                        }
+                        dqs'''8
+                        ~
+                        dqs'''4
+                        ~
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/12
+                {
+                    \times 4/7
+                    {
+                        dqs'''4.
+                        \grace {
+                            dqf'''16
+                            dqs'''16
+                        }
+                        g'2
+                    }
+                    \times 2/3
+                    {
+                        fs'1
+                        \grace {
+                            fqs'16
+                        }
+                        fs'2
+                    }
+                }
+            }
+            {
+                \tweak text #tuplet-number::calc-fraction-text
+                \times 7/8
+                {
+                    \times 4/7
+                    {
+                        \grace {
+                            g'16
+                        }
+                        fs'4
+                        g'8
+                        ~
+                        g'2
+                    }
+                    \times 4/7
+                    {
+                        \grace {
+                            fs'16
+                        }
+                        g'4.
+                        fs'2
+                    }
+                }
             }
         }
     >>

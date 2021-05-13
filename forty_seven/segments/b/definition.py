@@ -27,13 +27,12 @@ for i in range(10):
         pitch_set=pitch_set_1 if i % 2 else pitch_set_0,
         seed=879716156 + i * i,
     )
-    sequence.extend(
-        pang.Sequence(
-            sound_points_generator=sound_points_generator, sequence_duration=6
-        )
+    sequence_segment = pang.Sequence(
+        sound_points_generator=sound_points_generator, sequence_duration=6
     )
+    sequence.extend(sequence_segment)
 
-command = pang.QuantizeSequenceCommand(sequence, q_schema=forty_seven.q_schemas["B"])
+command = pang.QuantizeSequenceCommand(sequence, q_schema=forty_seven.q_schemas["C"])
 scope = pang.Scope(voice_name="FluteVoice1")
 maker(scope, command)
 
