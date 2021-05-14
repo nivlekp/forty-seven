@@ -27,7 +27,9 @@ sound_points_generator = pang.RandomWalkSoundPointsGenerator(
     pitch_set=pitch_set_0,
     seed=4145405,
 )
-sequence_segment = pang.Sequence(sound_points_generator=sound_points_generator, sequence_duration=80)
+sequence_segment = pang.Sequence(
+    sound_points_generator=sound_points_generator, sequence_duration=80
+)
 sequence.extend(sequence_segment)
 
 sound_points_generator = pang.AtaxicSoundPointsGenerator(
@@ -36,7 +38,9 @@ sound_points_generator = pang.AtaxicSoundPointsGenerator(
     pitch_set=pitch_set_1,
     seed=7928374,
 )
-sequence_segment = pang.Sequence(sound_points_generator=sound_points_generator, sequence_duration=6)
+sequence_segment = pang.Sequence(
+    sound_points_generator=sound_points_generator, sequence_duration=6
+)
 sequence.superpose(offset=6, sequence=sequence_segment)
 
 sound_points_generator = pang.AtaxicSoundPointsGenerator(
@@ -45,7 +49,9 @@ sound_points_generator = pang.AtaxicSoundPointsGenerator(
     pitch_set=pitch_set_1,
     seed=611767,
 )
-sequence_segment = pang.Sequence(sound_points_generator=sound_points_generator, sequence_duration=6)
+sequence_segment = pang.Sequence(
+    sound_points_generator=sound_points_generator, sequence_duration=6
+)
 sequence.superpose(offset=20, sequence=sequence_segment)
 
 sound_points_generator = pang.AtaxicSoundPointsGenerator(
@@ -54,7 +60,9 @@ sound_points_generator = pang.AtaxicSoundPointsGenerator(
     pitch_set=pitch_set_1,
     seed=938274,
 )
-sequence_segment = pang.Sequence(sound_points_generator=sound_points_generator, sequence_duration=6)
+sequence_segment = pang.Sequence(
+    sound_points_generator=sound_points_generator, sequence_duration=6
+)
 sequence.superpose(offset=32, sequence=sequence_segment)
 
 sound_points_generator = pang.AtaxicSoundPointsGenerator(
@@ -63,7 +71,9 @@ sound_points_generator = pang.AtaxicSoundPointsGenerator(
     pitch_set=pitch_set_1,
     seed=178719971,
 )
-sequence_segment = pang.Sequence(sound_points_generator=sound_points_generator, sequence_duration=6)
+sequence_segment = pang.Sequence(
+    sound_points_generator=sound_points_generator, sequence_duration=6
+)
 sequence.superpose(offset=50, sequence=sequence_segment)
 
 command = pang.QuantizeSequenceCommand(sequence, q_schema=forty_seven.q_schemas["B"])
