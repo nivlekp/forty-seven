@@ -14,6 +14,8 @@
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 5/7
                 {
+                    \tempo 4=72
+                    \time 7/8
                     r4.
                     r4
                     dqf'''4

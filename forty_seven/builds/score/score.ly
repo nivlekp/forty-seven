@@ -9,6 +9,7 @@
     {
         \include "_segments/a.ly"
         \include "_segments/b.ly"
+        \include "_segments/c.ly"
     }
     \layout { }
     \midi { }
