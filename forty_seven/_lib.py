@@ -63,11 +63,10 @@ search_trees = abjad.OrderedDict(
             "B",
             nauert.UnweightedSearchTree(
                 definition={
-                    2: {2: None, 3: None},
-                    3: {2: None, 3: None},
-                    5: {2: None},
+                    2: {2: {2: None}, 3: None, 5: None, 7: None},
+                    3: {2: None, 3: None, 5: None},
+                    5: {2: None, 3: None},
                     7: {2: None},
-                    13: None,
                 },
             ),
         ),
@@ -81,6 +80,16 @@ search_trees = abjad.OrderedDict(
                 },
             ),
         ),
+        (
+            "D",
+            nauert.WeightedSearchTree(
+                definition={
+                    "divisors": (2, 3, 5, 7, 11),
+                    "max_depth": 1,
+                    "max_divisions": 4,
+                }
+            ),
+        )
     ]
 )
 
@@ -112,6 +121,15 @@ q_schemas = abjad.OrderedDict(
                 use_full_measure=True,
             ),
         ),
+        (
+            "D",
+            nauert.MeasurewiseQSchema(
+                search_tree=search_trees["D"],
+                tempo=metronome_marks["72"],
+                time_signature=(7, 8),
+                use_full_measure=True,
+            )
+        )
     ]
 )
 
