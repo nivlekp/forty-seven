@@ -89,7 +89,7 @@ search_trees = abjad.OrderedDict(
                     "max_divisions": 4,
                 }
             ),
-        )
+        ),
     ]
 )
 
@@ -128,8 +128,8 @@ q_schemas = abjad.OrderedDict(
                 tempo=metronome_marks["72"],
                 time_signature=(7, 8),
                 use_full_measure=True,
-            )
-        )
+            ),
+        ),
     ]
 )
 
@@ -168,8 +168,10 @@ def attach_harmonics_to_sequence(sequence, harmonic_indices=[1, 2, 3], seed=1234
     for event in sequence:
         index = random.choice(harmonic_indices)
         harmonic_interval = overtone_series_intervals[index]
-        harmonics = pang.Harmonics(harmonic_interval)
-        pang.attach(harmonics, event)
+        assert isinstance(event.pitch, (int, float))
+        event.pitch = (event.pitch, event.pitch + harmonic_interval)
+        harmonics = pang.Harmonics()
+        event.attach(harmonics)
 
 
 def attach_red_to_sequence(sequence):
@@ -181,5 +183,5 @@ def attach_red_to_sequence(sequence):
         if event.pitch is not None:
             if index % 2 == 0:
                 color = pang.Red()
-                pang.attach(color, event)
+                event.attach(color)
             index += 1

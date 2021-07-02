@@ -51,7 +51,6 @@ sequence.insert(
     ),
 )
 
-
 sound_points_generator = pang.AtaxicSoundPointsGenerator(
     arrival_rate=3, service_rate=4.5, pitch_set=pitch_set_1, seed=17886
 )
@@ -62,12 +61,17 @@ sequence.insert(
     ),
 )
 
-# This is for debugging
-# forty_seven.attach_red_to_sequence(sequence)
+for event in sequence:
+    if not isinstance(event.pitch, tuple) and event.attachments is not None:
+        print(event)
+        raise Exception
+    if isinstance(event.pitch, tuple) and not isinstance(
+        event.attachments[0], pang.Harmonics
+    ):
+        print(event.pitch)
+        print(event.attachments)
+        raise Exception
 
 command = pang.QuantizeSequenceCommand(sequence, q_schema=forty_seven.q_schemas["C"])
 scope = pang.Scope(voice_name="FluteVoice1")
-maker(scope, command)
-
-command = pang.DecodeCommand()
 maker(scope, command)

@@ -2,7 +2,6 @@ import abjad
 import forty_seven
 import pang
 
-
 pitch_set_0 = pang.gen_pitches_from_sieve(
     sieve=forty_seven.sieves["A"],
     origin=0,

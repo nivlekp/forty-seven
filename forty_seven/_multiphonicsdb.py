@@ -1,5 +1,4 @@
 import abjad
-import typing
 
 
 class Multiphonics:
@@ -72,5 +71,5 @@ multiphonics_list = [
             "rh": ["ees", "gz"],
         },
         id_=235,
-    )
+    ),
 ]

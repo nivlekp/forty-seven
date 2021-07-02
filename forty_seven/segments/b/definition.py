@@ -35,6 +35,3 @@ for i in range(10):
 command = pang.QuantizeSequenceCommand(sequence, q_schema=forty_seven.q_schemas["C"])
 scope = pang.Scope(voice_name="FluteVoice1")
 maker(scope, command)
-
-command = pang.DecodeCommand()
-maker(scope, command)
