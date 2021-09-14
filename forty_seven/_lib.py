@@ -1,5 +1,7 @@
 import random
 
+import numpy as np
+
 import abjad
 import pang
 from abjadext import nauert
@@ -161,6 +163,35 @@ def make_score_template(simultaneous=True):
     abjad.attach(literal, staff)
     score = abjad.Score([staff], name="forty-seven")
     return score
+
+
+def attach_dynamics_to_sequence(
+    sequence, mean_amplitude=0.5, standard_deviation=0.5, seed=123456
+):
+    """
+    Attach dynamic to sequence randomly.
+    """
+    assert mean_amplitude <= 1.0 and mean_amplitude >= 0.0
+    dynamic_ordinals_bins = np.array([-6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5, 6])
+    np.random.seed(seed)
+    amplitudes = np.clip(
+        np.random.normal(mean_amplitude, standard_deviation, len(sequence)),
+        0,
+        1,
+    )
+    dynamic_ordinals = np.interp(
+        amplitudes, (amplitudes.min(), amplitudes.max()), (-6, 6)
+    )
+    dynamic_ordinals_indices = np.digitize(
+        dynamic_ordinals, dynamic_ordinals_bins, right=True
+    )
+    dynamic_names = [
+        abjad.Dynamic.dynamic_ordinal_to_dynamic_name(dynamic_ordinals_bins[index])
+        for index in dynamic_ordinals_indices
+    ]
+    for event, dynamic_name in zip(sequence, dynamic_names):
+        dynamic = pang.Dynamic(dynamic_name)
+        event.attach(dynamic)
 
 
 def attach_harmonics_to_sequence(sequence, harmonic_indices=[1, 2, 3], seed=123456):

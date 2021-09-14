@@ -1,4 +1,5 @@
 from ._lib import (
+    attach_dynamics_to_sequence,
     attach_harmonics_to_sequence,
     attach_red_to_sequence,
     make_score_template,
@@ -10,6 +11,7 @@ from ._lib import (
 from ._multiphonicsdb import multiphonics_list
 
 __all__ = [
+    "attach_dynamics_to_sequence",
     "attach_harmonics_to_sequence",
     "attach_red_to_sequence",
     "make_score_template",
