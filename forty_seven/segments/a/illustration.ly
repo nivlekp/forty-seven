@@ -23,6 +23,7 @@
                             gqf'
                             dqf'''
                         >4
+                        \ppppp
                         r8
                         r4
                     }
@@ -34,6 +35,7 @@
                             gqf'
                             gqf''
                         >4.
+                        \ffff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -46,12 +48,14 @@
                                 f'
                                 f''
                             >16
+                            \mf
                         }
                         <
                             \tweak NoteHead.style #'harmonic
                             gqf'
                             gqf''
                         >8
+                        \pppp
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -76,12 +80,14 @@
                             bqs'
                             bqs''
                         >16
+                        \fffff
                     }
                     <
                         \tweak NoteHead.style #'harmonic
                         gqf'
                         gqf''
                     >16
+                    \fffff
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -97,11 +103,13 @@
                         gqf'
                         dqf'''
                     >8
+                    \mf
                     <
                         \tweak NoteHead.style #'harmonic
                         bqs'
                         bqs''
                     >4
+                    \mf
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -121,6 +129,7 @@
                             bqs'
                             bqs''
                         >2.
+                        \fffff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -133,12 +142,14 @@
                                 bqs'
                                 bqs''
                             >16
+                            \ppp
                         }
                         <
                             \tweak NoteHead.style #'harmonic
                             f'
                             c'''
                         >4
+                        \mf
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -153,11 +164,13 @@
                             c'
                             c''
                         >4
+                        \fffff
                         <
                             \tweak NoteHead.style #'harmonic
                             c'
                             c''
                         >2
+                        \ffff
                         ~
                     }
                 }
@@ -178,6 +191,7 @@
                             c'
                             c''
                         >4
+                        \pp
                     }
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7
@@ -188,22 +202,26 @@
                                 c'
                                 g''
                             >16
+                            \p
                             <
                                 \tweak NoteHead.style #'harmonic
                                 dqf'
                                 aqf''
                             >16
+                            \fff
                         }
                         <
                             \tweak NoteHead.style #'harmonic
                             c'
                             c''
                         >4.
+                        \ffff
                         <
                             \tweak NoteHead.style #'harmonic
                             c'
                             c''
                         >2
+                        \ppppp
                     }
                 }
             }
@@ -218,11 +236,13 @@
                             c'
                             c''
                         >1
+                        \fffff
                         <
                             \tweak NoteHead.style #'harmonic
                             gqf'
                             dqf'''
                         >2
+                        \mf
                     }
                     \times 2/3
                     {
@@ -232,17 +252,20 @@
                                 bf'
                                 f'''
                             >16
+                            \fff
                         }
                         <
                             \tweak NoteHead.style #'harmonic
                             bqs'
                             gqf'''
                         >2
+                        \mp
                         <
                             \tweak NoteHead.style #'harmonic
                             bf'
                             bf''
                         >4
+                        \ff
                         ~
                     }
                 }
@@ -269,6 +292,7 @@
                         gqf'
                         gqf''
                     >4
+                    \f
                     \times 2/3
                     {
                         \grace {
@@ -277,29 +301,34 @@
                                 gqf'
                                 gqf''
                             >16
+                            \fff
                         }
                         <
                             \tweak NoteHead.style #'harmonic
                             f'
                             f''
                         >2
+                        \f
                         \grace {
                             <
                                 \tweak NoteHead.style #'harmonic
                                 c'
                                 c''
                             >16
+                            \mf
                             <
                                 \tweak NoteHead.style #'harmonic
                                 c'
                                 c''
                             >16
+                            \p
                         }
                         <
                             \tweak NoteHead.style #'harmonic
                             c'
                             c''
                         >4
+                        \fffff
                     }
                 }
             }
@@ -314,11 +343,13 @@
                             c'
                             c''
                         >4
+                        \fffff
                         <
                             \tweak NoteHead.style #'harmonic
                             dqf'
                             aqf''
                         >8
+                        \fffff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -338,12 +369,14 @@
                             f'
                             c'''
                         >16
+                        \ppp
                     }
                     <
                         \tweak NoteHead.style #'harmonic
                         gqf'
                         dqf'''
                     >2
+                    \pppp
                     ~
                 }
             }
@@ -400,6 +433,7 @@
                             c'
                             g''
                         >4
+                        \mp
                     }
                     \times 4/7
                     {
@@ -408,11 +442,13 @@
                             c'
                             g''
                         >8
+                        \pp
                         <
                             \tweak NoteHead.style #'harmonic
                             c'
                             g''
                         >16
+                        \fffff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -439,6 +475,7 @@
                             c'
                             c''
                         >8
+                        \mp
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -455,6 +492,7 @@
                             c'
                             c''
                         >2
+                        \fff
                     }
                 }
             }
@@ -468,17 +506,20 @@
                             c'
                             g''
                         >16
+                        \pppp
                     }
                     <
                         \tweak NoteHead.style #'harmonic
                         dqf'
                         aqf''
                     >4.
+                    \fffff
                     <
                         \tweak NoteHead.style #'harmonic
                         gqf'
                         gqf''
                     >4
+                    \ppppp
                 }
                 \times 4/7
                 {
@@ -488,12 +529,14 @@
                             gqf'
                             gqf''
                         >16
+                        \mf
                     }
                     <
                         \tweak NoteHead.style #'harmonic
                         bqs'
                         bqs''
                     >4.
+                    \pp
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -506,12 +549,14 @@
                             bqs'
                             gqf'''
                         >16
+                        \mf
                     }
                     <
                         \tweak NoteHead.style #'harmonic
                         bqs'
                         gqf'''
                     >8
+                    \fffff
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -532,6 +577,7 @@
                             f'
                             f''
                         >4
+                        \fff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -547,11 +593,13 @@
                             bf'
                             bf''
                         >8
+                        \mp
                         <
                             \tweak NoteHead.style #'harmonic
                             gqf'
                             dqf'''
                         >4
+                        \ff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -567,6 +615,7 @@
                     c'
                     c''
                 >8
+                \p
                 r4
                 r4
                 \times 4/5
@@ -576,6 +625,7 @@
                         gqf'
                         dqf'''
                     >8.
+                    \mf
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -587,6 +637,7 @@
                         dqf'
                         dqf''
                     >16
+                    \pppp
                     ~
                 }
             }
@@ -601,6 +652,7 @@
                     f'
                     f''
                 >4
+                \mf
                 ~
                 <
                     \tweak NoteHead.style #'harmonic
@@ -626,6 +678,7 @@
                                 c'
                                 g''
                             >16
+                            \fffff
                             b'''16
                         }
                         b'''2
@@ -936,6 +989,7 @@
                             c'
                             c''
                         >4.
+                        \fffff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -947,6 +1001,7 @@
                             c'
                             c''
                         >8
+                        \fffff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -967,6 +1022,7 @@
                             gqf'
                             dqf'''
                         >2.
+                        \fffff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -979,12 +1035,14 @@
                                 c'
                                 c''
                             >16
+                            \fffff
                         }
                         <
                             \tweak NoteHead.style #'harmonic
                             c'
                             c''
                         >4
+                        \fffff
                         ~
                     }
                     \times 4/7
@@ -1007,6 +1065,7 @@
                         c'
                         c''
                     >4.
+                    \ppppp
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -1019,17 +1078,20 @@
                             dqf'
                             aqf''
                         >16
+                        \fffff
                         <
                             \tweak NoteHead.style #'harmonic
                             c'
                             g''
                         >16
+                        \fff
                     }
                     <
                         \tweak NoteHead.style #'harmonic
                         c'
                         c''
                     >8
+                    \fffff
                 }
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 6/7
@@ -1041,6 +1103,7 @@
                         c'
                         g''
                     >16
+                    \ppppp
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -1066,6 +1129,7 @@
                             f'
                             c'''
                         >2
+                        \mf
                     }
                     \times 2/3
                     {
@@ -1075,17 +1139,20 @@
                                 bf'
                                 bf''
                             >16
+                            \ff
                         }
                         <
                             \tweak NoteHead.style #'harmonic
                             f'
                             f''
                         >2
+                        \fffff
                         <
                             \tweak NoteHead.style #'harmonic
                             bqs'
                             bqs''
                         >4
+                        \fffff
                         ~
                     }
                 }
@@ -1106,6 +1173,7 @@
                             bqs'
                             bqs''
                         >8
+                        \ppppp
                     }
                     \times 4/7
                     {
@@ -1114,6 +1182,7 @@
                             bf'
                             bf''
                         >2.
+                        \ff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -1126,12 +1195,14 @@
                                 bqs'
                                 bqs''
                             >16
+                            \mf
                         }
                         <
                             \tweak NoteHead.style #'harmonic
                             bf'
                             bf''
                         >4
+                        \ffff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -1164,6 +1235,7 @@
                             bf'
                             f'''
                         >4
+                        \fffff
                     }
                     \times 4/7
                     {
@@ -1172,6 +1244,7 @@
                             bqs'
                             gqf'''
                         >8.
+                        \fffff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -1189,6 +1262,7 @@
                             bqs'
                             bqs''
                         >16
+                        \ff
                         ~
                     }
                 }
@@ -1209,6 +1283,7 @@
                             bf'
                             bf''
                         >8
+                        \ppppp
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -1224,12 +1299,14 @@
                                 f'
                                 c'''
                             >16
+                            \ppppp
                         }
                         <
                             \tweak NoteHead.style #'harmonic
                             f'
                             c'''
                         >4.
+                        \mf
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -1241,6 +1318,7 @@
                             f'
                             c'''
                         >8
+                        \fffff
                         ~
                         <
                             \tweak NoteHead.style #'harmonic
@@ -1260,6 +1338,7 @@
                         f'
                         f''
                     >16
+                    \f
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -1275,6 +1354,7 @@
                         gqf'
                         dqf'''
                     >4.
+                    \f
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -1287,12 +1367,14 @@
                             c'
                             g''
                         >16
+                        \fff
                     }
                     <
                         \tweak NoteHead.style #'harmonic
                         f'
                         c'''
                     >8
+                    \mf
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -1310,6 +1392,7 @@
                         c'
                         c''
                     >4.
+                    \pppp
                     ~
                     <
                         \tweak NoteHead.style #'harmonic
@@ -1322,12 +1405,14 @@
                             dqf'
                             aqf''
                         >16
+                        \ppp
                     }
                     <
                         \tweak NoteHead.style #'harmonic
                         c'
                         g''
                     >8
+                    \ppppp
                 }
                 \times 2/3
                 {
@@ -1336,11 +1421,13 @@
                         f'
                         f''
                     >4
+                    \fffff
                     <
                         \tweak NoteHead.style #'harmonic
                         c'
                         c''
                     >2
+                    \ppppp
                     ~
                 }
             }
@@ -1355,6 +1442,7 @@
                     c'
                     g''
                 >8
+                \p
                 \tweak text #tuplet-number::calc-fraction-text
                 \times 5/7
                 {
@@ -1364,12 +1452,14 @@
                             f'
                             f''
                         >16
+                        \fff
                     }
                     <
                         \tweak NoteHead.style #'harmonic
                         bf'
                         f'''
                     >8
+                    \ff
                     r4
                     r2
                 }

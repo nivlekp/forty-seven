@@ -26,10 +26,12 @@ sound_points_generator = pang.GRWSoundPointsGenerator(
     standard_deviation=2,
     seed=28374,
 )
-sequence.extend(
-    pang.Sequence(sound_points_generator=sound_points_generator, sequence_duration=60)
+segment = pang.Sequence(
+    sound_points_generator=sound_points_generator, sequence_duration=60
 )
-forty_seven.attach_harmonics_to_sequence(sequence, harmonic_indices=[1, 2], seed=123456)
+forty_seven.attach_harmonics_to_sequence(segment, harmonic_indices=[1, 2], seed=123456)
+forty_seven.attach_dynamics_to_sequence(segment, mean_amplitude=0.5, seed=5681)
+sequence.extend(segment)
 
 sound_points_generator = pang.AtaxicSoundPointsGenerator(
     arrival_rate=0.5, service_rate=1, pitch_set=pitch_set_1, seed=98719

@@ -17,6 +17,6 @@ metadata = abjad.OrderedDict(
             "empty_beatspan",
             abjad.Duration(0, 1),
         ),
-        ("segment_name", "c"),
+        ("segment_name", "d"),
     ]
 )

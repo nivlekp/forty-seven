@@ -79,6 +79,3 @@ sequence.superpose(offset=50, sequence=sequence_segment)
 command = pang.QuantizeSequenceCommand(sequence, q_schema=forty_seven.q_schemas["B"])
 scope = pang.Scope(voice_name="FluteVoice1")
 maker(scope, command)
-
-command = pang.DecodeCommand()
-maker(scope, command)
