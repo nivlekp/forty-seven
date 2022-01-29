@@ -1,13 +1,12 @@
-.PHONY: docs build gh-pages
+.PHONY: black-check black-reformat clean flake8 isort-check isort-reformat
+.PHONY: mypy pytest pytest-coverage pytest-x reformat check test
+.PHONY: make-segments
 
 black-check:
 	black --check --diff --target-version=py38 .
 
 black-reformat:
 	black --target-version=py38 .
-
-build:
-	python setup.py sdist
 
 clean:
 	find . -name '*.pyc' | xargs rm
@@ -19,9 +18,6 @@ clean:
 	rm -Rif dist
 	rm -Rif htmlcov
 	rm -Rif prof
-
-docs:
-	make -C docs/ html
 
 flake_ignore = --ignore=E203,E266,E501,W503
 flake_options = --isolated --max-line-length=88
@@ -61,9 +57,6 @@ isort-reformat:
 	--use-parentheses \
 	.
 
-jupyter-test:
-	jupyter nbconvert --to=html --ExecutePreprocessor.enabled=True tests/test.ipynb
-
 mypy:
 	mypy .
 	# fix mypy errors and then run mypy over tests/ directory
@@ -89,14 +82,6 @@ reformat:
 	make black-reformat
 	make isort-reformat
 
-release:
-	make -C docs/ clean html
-	make clean
-	make build
-	pip install -U twine
-	twine upload dist/*.tar.gz
-	make gh-pages
-
 check:
 	make black-check
 	make flake8
@@ -109,3 +94,6 @@ test:
 	make isort-check
 	#make mypy
 	make pytest
+
+segments-ly:
+	cd scr && ./run-segmentmakers-ly
