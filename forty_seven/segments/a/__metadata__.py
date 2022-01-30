@@ -1,22 +1,17 @@
 import abjad
 
-metadata = abjad.OrderedDict(
-    [
-        (
-            "last_tempo",
-            abjad.MetronomeMark(
-                reference_duration=abjad.Duration(1, 4),
-                units_per_minute=72,
-            ),
+metadata = dict(
+    {
+        "empty_beatspan": abjad.Duration(3, 4),
+        "last_tempo": MetronomeMark(
+            reference_duration=Duration(1, 4),
+            units_per_minute=72,
+            textual_indication=None,
+            custom_markup=None,
+            decimal=None,
+            hide=False,
         ),
-        (
-            "last_time_signature",
-            abjad.TimeSignature((7, 8)),
-        ),
-        (
-            "empty_beatspan",
-            abjad.Duration(3, 4),
-        ),
-        ("segment_name", "a"),
-    ]
+        "last_time_signature": TimeSignature(pair=(7, 8), hide=False, partial=None),
+        "segment_name": "a",
+    }
 )
