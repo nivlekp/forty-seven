@@ -28,8 +28,8 @@ class Multiphonics:
         self,
         pitches: list[str],
         fingering: dict[str, list[str]],
-        id_: typing.Optional[int] = None,
-        comments: typing.Optional[str] = None,
+        id_: int | None = None,
+        comments: str | None = None,
     ):
         self._pitches = pitches
         self._fingering = fingering
@@ -49,7 +49,7 @@ class Multiphonics:
             "}",
         ]
         string = " ".join(string_components)
-        return abjad.Markup(string, literal=True, direction=abjad.Up)
+        return abjad.Markup(string)
 
     @property
     def abjad_format(self, duration=(4, 4)):
@@ -58,7 +58,7 @@ class Multiphonics:
         selection = maker([tuple(self._pitches)], duration)
         chord = selection[0]
         markup = self._gen_markup_string()
-        abjad.attach(markup, chord)
+        abjad.attach(markup, chord, direction=abjad.UP)
         return chord
 
 
