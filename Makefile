@@ -3,10 +3,10 @@
 .PHONY: make-segments
 
 black-check:
-	black --check --diff --target-version=py38 .
+	black --check --diff .
 
 black-reformat:
-	black --target-version=py38 .
+	black .
 
 clean:
 	find . -name '*.pyc' | xargs rm
@@ -86,13 +86,11 @@ check:
 	make black-check
 	make flake8
 	make isort-check
-	#make mypy
 
 test:
 	make black-check
 	make flake8
 	make isort-check
-	#make mypy
 	make pytest
 
 segments-ly:
