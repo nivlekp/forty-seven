@@ -69,5 +69,5 @@ jobs:
         make pytest
     - name: Test Segments
       run: |
-        export PANGPATH=$PANGPATH:/tmp/pang
+        export PANG_PATH=$PANG_PATH:/tmp/pang
         make test-sections
