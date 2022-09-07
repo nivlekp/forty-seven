@@ -1,3 +1,5 @@
+import pathlib
+
 import forty_seven
 import pang
 
@@ -76,4 +78,10 @@ for event in sequence:
 
 command = pang.QuantizeSequenceCommand(sequence, q_schema=forty_seven.q_schemas["C"])
 scope = pang.Scope(voice_name="FluteVoice1")
-maker(scope, command)
+
+
+if __name__ == "__main__":
+    pang.build.section(template, scope, command)
+    lilypond_file_path = pathlib.Path(__file__).parent / "music.ly"
+    lilypond_file = pang.build.make_lilypond_file(template)
+    pang.build.persist(lilypond_file, lilypond_file_path)

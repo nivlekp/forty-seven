@@ -95,3 +95,9 @@ test:
 
 segments-ly:
 	cd scr && ./run-segmentmakers-ly
+
+sections:
+	@python ${PANG_PATH}/scripts/make_sections.py --sections $(sections)
+
+test-sections:
+	@pytest ${PANG_PATH}/scripts/test_sections.py
