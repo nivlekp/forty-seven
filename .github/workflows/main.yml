@@ -67,3 +67,6 @@ jobs:
         make flake8
         make isort-check
         make pytest
+    - name: Test Segments
+      run: |
+        make test-sections
