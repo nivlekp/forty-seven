@@ -10,4 +10,4 @@ on:
 
 jobs:
   build:
-    uses: nivlekp/pang/.github/workflow-templates/composition-ci.yml
+    uses: nivlekp/pang/.github/workflow-templates/composition-ci.yml@main
