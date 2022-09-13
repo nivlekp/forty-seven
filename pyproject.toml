@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "forty_seven"
+version = "0.0.1"
+authors = [
+    { name="Tsz Kiu Pang", email="osamupang@gmail.com" },
+]
+description = "Forty Seven, for solo flute"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "abjad",
+    "abjad-ext-nauert",
+    "black",
+    "flake8",
+    "isort",
+    "pang",
+    "pytest",
+]
