@@ -40,8 +40,4 @@ scope = pang.Scope(voice_name="FluteVoice1")
 
 if __name__ == "__main__":
     metadata = pang.build.section(template, scope, command)
-    lilypond_file_path = pathlib.Path(__file__).parent / "music.ly"
-    lilypond_file = pang.build.make_lilypond_file(template)
-    pang.build.persist(lilypond_file, lilypond_file_path)
-    metadata_file_path = pathlib.Path(__file__).parent / "__metadata__.json"
-    pang.build.write_metadata(metadata, metadata_file_path)
+    pang.build.persist(template, metadata)

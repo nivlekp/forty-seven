@@ -7,9 +7,10 @@
 
 \score {
     {
-        \include "_segments/a.ly"
-        \include "_segments/b.ly"
-        \include "_segments/c.ly"
+        \include "../../segments/a/music.ily"
+        \include "../../segments/b/music.ily"
+        \include "../../segments/c/music.ily"
+        \include "../../segments/d/music.ily"
     }
     \layout { }
     \midi { }
