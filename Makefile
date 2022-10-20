@@ -1,6 +1,6 @@
 .PHONY: black-check black-reformat clean flake8 isort-check isort-reformat
-.PHONY: mypy pytest pytest-coverage pytest-x reformat check test
-.PHONY: make-segments
+.PHONY: mypy pytest reformat check test
+.PHONY: sections score test-sections test-score
 
 black-check:
 	black --check --diff .
@@ -67,17 +67,6 @@ project = forty_seven
 pytest:
 	pytest .
 
-pytest-coverage:
-	rm -Rf htmlcov/
-	pytest \
-	--cov-config=.coveragerc \
-	--cov-report=html \
-	--cov=${project} \
-	.
-
-pytest-x:
-	pytest -x .
-
 reformat:
 	make black-reformat
 	make isort-reformat
@@ -92,9 +81,6 @@ test:
 	make flake8
 	make isort-check
 	make pytest
-
-segments-ly:
-	cd scr && ./run-segmentmakers-ly
 
 sections:
 	@python ${PANG_PATH}/scripts/make_sections.py --sections $(sections)
